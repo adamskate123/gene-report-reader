@@ -16,12 +16,53 @@ resulting table as Markdown for downstream clinical workflows.
 
 1. Install dependencies (Tkinter is included with most Python distributions) and
    install the package in editable mode so the ``gene_report_reader`` module is
-   discoverable:
+   discoverable.
 
-   ```bash
-   pip install olmOCR2
-   pip install -e .
-   ```
+   ### Windows (PowerShell)
+
+   1. Open **PowerShell** and navigate to the project directory, for example:
+
+      ```powershell
+      cd C:\path\to\gene-report-reader
+      ```
+
+   2. (Optional) Create and activate a virtual environment:
+
+      ```powershell
+      py -m venv .venv
+      .\.venv\Scripts\Activate.ps1
+      ```
+
+   3. Install the dependencies and the package in editable mode:
+
+      ```powershell
+      py -m pip install --upgrade pip
+      py -m pip install olmOCR2
+      py -m pip install -e .
+      ```
+
+   ### macOS (Terminal)
+
+   1. Open the **Terminal** app and move into the project directory, for example:
+
+      ```bash
+      cd /path/to/gene-report-reader
+      ```
+
+   2. (Optional) Create and activate a virtual environment:
+
+      ```bash
+      python3 -m venv .venv
+      source .venv/bin/activate
+      ```
+
+   3. Install the dependencies and the package in editable mode:
+
+      ```bash
+      python3 -m pip install --upgrade pip
+      python3 -m pip install olmOCR2
+      python3 -m pip install -e .
+      ```
 
 2. Launch the application:
 
